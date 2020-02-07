@@ -1,11 +1,11 @@
-<p class="h1 text-center">{{ title }}</p>
-<div class="container-fluid justify-content-center" id="navigation">
+<p class="h1 text-center">{{ title | uppercase }}</p>
+<div class="container-fluid justify-content-center">
 	<ul class="nav justify-content-center">
 		<li class="nav-item">
-			<a class="nav-link" href="#">Welcome</a>
+			<a class="nav-link" href="/welcome">Welcome</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Status (Under Construction)</a>
+			<a class="nav-link" href="/status">Status (Under Construction)</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">Details (Under Construction)</a>
@@ -18,3 +18,4 @@
 		</li>
 	</ul>
 </div>
+<router-outlet></router-outlet>
